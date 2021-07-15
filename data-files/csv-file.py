@@ -8,12 +8,17 @@ with open("contacts.csv") as contacts:
 
 print("\n\n")
 
+print("Second loop")
+
 #reading csv into a dictionary
 with open ("contacts.csv") as contacts:
     csv_reader = csv.DictReader(contacts)
     for row in csv_reader:
-        print(row.keys())
-        print(f'{row["name"]} {row["address"]} {row["email"]} {row["phone"]}')
+        print(row)
+        # print(row.keys())
+        # print(f'{row["name"]} {row["address"]} {row["email"]} {row["phone"]}')
+
+print("End second loop")
 
 '''
 optional parameters
