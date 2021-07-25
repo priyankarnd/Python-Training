@@ -1,5 +1,13 @@
 #Defining a class
 
+class MyClass:
+    a = 10
+    b = 20
+
+x = MyClass()
+print(x.a)
+print(x.b)
+
 class Person :
     #1. constructor
     def __init__(self, firstName, lastName, age):
@@ -14,6 +22,7 @@ class Person :
 #3. Inheritance
 
 class Customer (Person) :
+    gender = "male"
     def __init__(self, id, firstName, lastName, age):
         super().__init__(firstName, lastName, age)
         self._id = id  #Private property of child class
@@ -49,8 +58,16 @@ print(p.firstName)
 print(p.age)
 print(p.fullName())
 
+# Passing new value
+p.firstName = "Jack"
+print(p.firstName)
+
+# Deleting object
+del p
+
 #Creating a customer object
 c = Customer (34, "Mary", "Smith", 40)
+print(c.gender)
 
 #Inherited Method
 print(c.fullName())

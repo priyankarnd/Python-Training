@@ -61,5 +61,31 @@ print( x < 50 and y < 50)
 
 print (not( x < 10 and y < 30))
 
+# Identity operators
+
+x = 10
+y = 10
+
+print(x is y)
+print(x is not y)
+
+
+# Membership operators
+
+x = [10, 20, 30]
+print(10 in x)
+print(11 not in x)
+
+
+# Bitwise operators
+
+x = 0
+y = 1
+
+print(x & y)
+print(x | y)
+
+
+
 
 

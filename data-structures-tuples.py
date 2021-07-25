@@ -30,6 +30,12 @@ print(x)
 for x in fruit:
     print(x)
 
+# Making list from sub-elements of tuple
+(a, b, *c) = fruit
+print(a)
+print(b)
+print(c)
+
 #check for item
 if "apple" in fruit:
     print("Yes, 'apple' is in the fruits tuple")

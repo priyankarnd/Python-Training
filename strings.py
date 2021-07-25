@@ -97,6 +97,11 @@ sentence = "There has never been a better time to learn Python"
 words = sentence.split()
 print(words)
 
+# replace
+b = "Honda CRV"
+print(b.replace("CRV","Passport"))
+
+
 #Reverse the list
 words.reverse()
 print(" ".join(words))
@@ -110,6 +115,13 @@ print("""\
         User defined look
                 """)
 
+# Title format
+a = "I own a Honda suv"
+print(a.title())
+
+# Change to opposite case
+a = "Toyota and Honda are competitors"
+print(a.swapcase())
 
 
 

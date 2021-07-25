@@ -4,6 +4,9 @@
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 
+# length
+print(len(fruits))
+
 #access element from the list
 print(fruits[1])
 
@@ -28,6 +31,10 @@ print(fruits.index('banana',4)) # Find index of next banana starting at position
 fruits.reverse()
 
 print(fruits)
+
+print(fruits[::-1])
+
+# print(fruits)
 
 #add an item to the end of the list
 fruits.append('grape')
@@ -78,6 +85,44 @@ fruits.remove("kiwi")
 fruits.remove("banana") #removes first banana
 
 print(fruits)
+
+# replace multiple
+fruits[1:3] = ["strawberry", "pear"]
+print(fruits)
+
+# extend
+veg = ["tomatoes", "cabbage", "cauliflower"]
+fruits.extend(veg)
+print(fruits)
+
+meat = ("chicken", "lamb")
+fruits.extend(meat)
+print(fruits)
+
+# Pop by position
+fruits.pop(3)
+print(fruits)
+
+# lambda function
+
+[print(x) for x in fruits]
+
+x = [item for item in fruits]
+print(x)
+
+# copy the list
+combo = fruits.copy(fruits)
+print(combo)
+
+# clear elements of list
+fruits.clear()
+print(fruits)
+
+# delete list
+del(fruits)
+print(fruits)
+
+
 
 
 

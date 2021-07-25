@@ -14,6 +14,8 @@ def greeting (firstName):
 
 greeting("Justin")
 
+# Random parameters
+
 def fullGreeting (firstName, lastName):
     print("Hello " + firstName + " " + lastName)
     print("Hello {} {}".format(firstName,lastName))
@@ -21,6 +23,13 @@ def fullGreeting (firstName, lastName):
     print("Hello {first} {last}".format(last=lastName, first=firstName))
 
 fullGreeting("Priyankar", "Roychowdhury")
+
+# Pass multiple values and access values by their index
+def my_func2(*arg):
+    print(arg[2])
+
+my_func2("ABC", "PQR", "XYZ")
+
 
 #Default parameter values
 def default_greeting(firstName = "John"):
@@ -33,6 +42,7 @@ default_greeting("Ross")
 #passing a list as a parameter
 
 def myFoodList (food):
+    print(food)
     for item in food:
         print(item)
 

@@ -45,6 +45,10 @@ movie["year"] = 2010
 
 print(movie)
 
+# Update
+movie.update({"year": 2011})
+print(movie)
+
 #Removing items
 movie.pop("year")
 
